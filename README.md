@@ -14,8 +14,14 @@ Get **hex-to-ansi** up and running quickly!
     npm install hex-to-ansi
     ```
 2. **Use**:
+    ESM:
     ```js
     import { hexToAnsi } from 'hex-to-ansi';
+    console.log(hexToAnsi('#ff5733'), 'Test Message', '\u001b[0m');
+    ```
+    CommonJS:
+    ```js
+    const { hexToAnsi } = require('hex-to-ansi');
     console.log(hexToAnsi('#ff5733'), 'Test Message', '\u001b[0m');
     ```
 

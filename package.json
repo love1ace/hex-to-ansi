@@ -1,8 +1,14 @@
 {
   "name": "hex-to-ansi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "hex to ansi",
-  "main": "index.js",
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "exports": {
+    "import": "./index.js",
+    "require": "./index.cjs"
+  },
+  "type": "module",
   "license": "MIT",
   "author": "love1ace",
   "repository": {
@@ -23,6 +29,7 @@
   },
   "files": [
     "index.js",
+    "index.cjs",
     "README.md",
     "LICENSE"
   ],
